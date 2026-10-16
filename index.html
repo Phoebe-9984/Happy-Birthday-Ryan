@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Ryan!</title>
+  <meta name="description" content="A birthday surprise for Ryan 🎁">
+  <meta name="theme-color" content="#1a1233">
+
+  <!-- Link previews (Slack, iMessage, Teams, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy Birthday, Ryan!">
+  <meta property="og:description" content="A birthday surprise for Ryan 🎁">
+  <meta property="og:site_name" content="Happy Birthday, Ryan!">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Happy Birthday, Ryan!">
+  <meta name="twitter:description" content="A birthday surprise for Ryan 🎁">
+
+  <!-- Emoji favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,500;1,9..144,700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <button class="mute" id="muteBtn" type="button" aria-pressed="false" aria-label="Turn sound on" title="Sound off">
+      <span aria-hidden="true">🔇</span>
+    </button>
+  </header>
+
+  <main class="stage">
+    <section class="gift-scene" id="giftScene">
+      <p class="kicker" id="giftKicker">I got you something…</p>
+      <button class="gift" id="gift" type="button" aria-label="For Ryan. Tap to open.">
+        <span class="gift-glow" aria-hidden="true"></span>
+        <span class="gift-box" aria-hidden="true"></span>
+        <span class="gift-lid" aria-hidden="true">
+          <span class="bow">
+            <span class="bow-loop bow-loop--left"></span>
+            <span class="bow-loop bow-loop--right"></span>
+            <span class="bow-knot"></span>
+          </span>
+        </span>
+        <span class="gift-tag" aria-hidden="true">
+          <span class="tag-title" id="tagTitle">For Ryan 🎁</span>
+          <span class="tag-hint" id="tagHint">— tap to open</span>
+        </span>
+      </button>
+      <p class="hint">tap or click the box</p>
+    </section>
+
+    <section class="layer" id="layer" hidden></section>
+  </main>
+
+  <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
